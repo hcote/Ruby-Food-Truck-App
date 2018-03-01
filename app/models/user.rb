@@ -3,7 +3,7 @@ class User < ApplicationRecord
 
     # only validate password length on create (not update)
     validates :password, length: { minimum: 6 }, on: :create
-  
+
     validates :email,
         presence: true,
         uniqueness: true,
@@ -11,6 +11,6 @@ class User < ApplicationRecord
             with: /@/,
             message: "not a valid format"
         }
-  
 
+    has_many :foodtrucks
 end

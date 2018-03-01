@@ -13,6 +13,10 @@
     <%= f.label :password_confirmation, "Password Confirmation" %>
     <%= f.password_field :password_confirmation, placeholder: "Confirm password", class: "form-control" %>
   </div>
+  <div class="form-group">
+    <%= f.label :owner, "Are you a food truck owner?" %> <br>
+    <%= f.check_box :password_confirmation %> Yes
+  </div>
   <%= f.submit "Sign Up", class: "btn btn-block btn-default" %>
 <% end %>
 <br>

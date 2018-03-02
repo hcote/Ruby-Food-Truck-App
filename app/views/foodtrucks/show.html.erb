@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @foodtruck.name %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @foodtruck.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @foodtruck.longitude %>
+</p>
+
+<p>
+  <strong>Menu:</strong>
+  <%= @foodtruck.menu %>
+</p>
+
+<p>
+  <strong>Foodtype:</strong>
+  <%= @foodtruck.foodtype %>
+</p>
+
+<p>
+  <strong>Logo:</strong>
+  <%= @foodtruck.logo %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @foodtruck.rating %>
+</p>
+
+<%= link_to 'Edit', edit_foodtruck_path(@foodtruck) %> |
+<%= link_to 'Back', foodtrucks_path %>

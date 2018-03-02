@@ -1,0 +1,48 @@
+<%= form_with(model: foodtruck, local: true) do |form| %>
+  <% if foodtruck.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(foodtruck.errors.count, "error") %> prohibited this foodtruck from being saved:</h2>
+
+      <ul>
+      <% foodtruck.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :foodtruck_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, id: :foodtruck_latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, id: :foodtruck_longitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :menu %>
+    <%= form.text_field :menu, id: :foodtruck_menu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foodtype %>
+    <%= form.text_field :foodtype, id: :foodtruck_foodtype %>
+  </div>
+
+  <div class="field">
+    <%= form.label :logo %>
+    <%= form.text_field :logo, id: :foodtruck_logo %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

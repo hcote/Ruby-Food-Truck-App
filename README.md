@@ -23,6 +23,6 @@ Things you may want to cover:
 
 * ...
 
-
-Sign up page:
-  1. More fields (food truck owner (T/F); location; menu; food type)
+Unfinished:
+  http://localhost:3500/signup
+  - Are you a food truck owner - can't get :owner

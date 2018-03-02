@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
     before_action :set_user, except: [:index, :new, :create]
     before_action :authorize, only: [:edit, :update, :destroy]
-  
+
     def index
       @users = User.all
     end
-  
+
     def new
       # don't let current_user see the sign up view
       if current_user
@@ -14,7 +14,7 @@ class UsersController < ApplicationController
         @user = User.new
       end
     end
-  
+
     def create
       # don't let current_user create new account
       if current_user
@@ -31,17 +31,17 @@ class UsersController < ApplicationController
         end
       end
     end
-  
+
     def show
     end
-  
+
     def edit
       # don't let current_user see another user's edit view
       unless current_user == @user
         redirect_to user_path(current_user)
       end
     end
-  
+
     def update
       # only let current_user update their own account
       if current_user == @user
@@ -56,7 +56,7 @@ class UsersController < ApplicationController
         redirect_to user_path(current_user)
       end
     end
-  
+
     def destroy
       # only let current_user delete their own account
       if current_user == @user
@@ -68,16 +68,16 @@ class UsersController < ApplicationController
         redirect_to user_path(current_user)
       end
     end
-  
+
     private
-  
+
       def user_params
         params.require(:user).permit(:email, :password, :password_confirmation)
       end
-  
+
       def set_user
         user_id = params[:id]
         @user = User.find_by_id(user_id)
       end
-  
+
   end

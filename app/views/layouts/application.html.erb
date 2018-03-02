@@ -6,7 +6,7 @@
 
   <!-- bootstrap css -->
   <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
   <!-- application stylesheet -->
   <!-- <%= stylesheet_link_tag :application, media: :all %> -->
 
@@ -53,13 +53,17 @@
       </div>
     </div>
   <% end %>
-  <div class="container site-content">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <%= yield %>
+  <!-- <div class="contentWrap"> -->
+    <div class="container site-content">
+      <div class="row">
+
+        <div class="col-md-6 col-md-offset-3">
+          <%= yield %>
+
+        </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
   <!-- application javascript file -->
   <%= javascript_include_tag :application %>

@@ -69,6 +69,6 @@ class FoodtrucksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def foodtruck_params
-      params.require(:foodtruck).permit(:name, :lat, :lon, :menu, :foodtype, :logo, :rating)
+      params.require(:foodtruck).permit(:name, :latitude, :longitude, :menu, :foodtype, :logo, :rating)
     end
 end

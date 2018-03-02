@@ -13,3 +13,103 @@
  *= require_tree .
  *= require_self
  */
+
+
+body{
+  margin: 0 auto;
+    background-image: url('../assets/churros.jpg');
+   background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+footer {
+  background-color: yellow;
+}
+
+.userIndex{
+  /*background-color: red;*/
+}
+
+.container{
+  /*background-color: green;*/
+}
+.navbar-header{
+  /*background-color: orange;*/
+  font-family: 'Shrikhand', cursive;
+
+  color: white;
+}
+.navbar-header a{
+  padding-top: .8em;
+    font-size: 4em;
+  color: white;
+}
+.navbar-header a:visited{
+  color: white;
+}
+.navbar-header a:hover{
+  color: white;
+}
+
+.navbar-right li {
+  background-color: #7a9d97;
+  border-radius: .5em;
+  margin-left: .5em;
+  margin-top: 1em;
+  padding: .2em .7em;
+  font-weight: 800;
+}
+
+.navbar-right li:hover {
+  box-shadow: 1px 3px 2px 1px rgba(255, 255, 255, .2);
+}
+
+.navbar-right li a{
+  color: white;
+}
+
+.navbar-right li a:visited{
+  color: white;
+}
+
+.navbar{
+  background-color: #00303f;
+  margin-top: 0em;
+  margin-bottom: 0em;
+
+  border-bottom: .2em solid #cae4db;
+  border-radius: 0em;
+  height: 10em;
+}
+
+.row {
+background: rgba(192, 192, 192, .7);
+  width: 100%;
+  margin: 0em 0em;
+  padding: 3.5em 0em;
+}
+/*.col-md-6 col-md-offset-3*/
+
+tbody td{
+  background-color: green;
+  padding: .5em 2em;
+  margin: 1em 1em;
+  border-radius: 1em;
+}
+
+.container site-content{
+  width: 100%
+}
+
+.infoWin h1{
+  color: #00303f;
+  text-transform: uppercase;
+  font-family: 'Shrikhand', cursive;
+  border-bottom: .2em solid #cae4db;
+  text-align: center;
+}
+
+#map{
+  width: 100%;
+}

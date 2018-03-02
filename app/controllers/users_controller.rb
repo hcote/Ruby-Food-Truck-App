@@ -32,7 +32,9 @@ class UsersController < ApplicationController
       end
     end
 
+# adding info to show to make sure owner is recorded ///////////////////////////////////////////////
     def show
+      @owner = @user.owner
     end
 
     def edit
@@ -72,7 +74,7 @@ class UsersController < ApplicationController
     private
 
       def user_params
-        params.require(:user).permit(:email, :password, :password_confirmation)
+        params.require(:user).permit(:email, :password, :password_confirmation, :owner)
       end
 
       def set_user

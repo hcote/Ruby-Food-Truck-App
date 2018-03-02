@@ -22,7 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-Unfinished:
-  http://localhost:3500/signup
-  - Are you a food truck owner - can't get :owner

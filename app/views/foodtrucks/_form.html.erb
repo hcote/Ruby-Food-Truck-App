@@ -17,13 +17,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :lat %>
-    <%= form.number_field :lat, id: :foodtruck_lat %>
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, id: :foodtruck_latitude %>
   </div>
 
   <div class="field">
-    <%= form.label :lon %>
-    <%= form.number_field :lon, id: :foodtruck_lon %>
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, id: :foodtruck_longitude %>
   </div>
 
   <div class="field">
@@ -41,10 +41,6 @@
     <%= form.text_field :logo, id: :foodtruck_logo %>
   </div>
 
-  <div class="field">
-    <%= form.label :rating %>
-    <%= form.number_field :rating, id: :foodtruck_rating %>
-  </div>
 
   <div class="actions">
     <%= form.submit %>

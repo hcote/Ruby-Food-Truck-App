@@ -6,12 +6,12 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Lat</th>
-      <th>Lon</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
       <th>Menu</th>
       <th>Foodtype</th>
       <th>Logo</th>
-      <!-- <th>Rating</th> -->
+      <th>Rating</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,12 +20,12 @@
     <% @foodtrucks.each do |foodtruck| %>
       <tr>
         <td><%= foodtruck.name %></td>
-        <td><%= foodtruck.lat %></td>
-        <td><%= foodtruck.lon %></td>
+        <td><%= foodtruck.latitude %></td>
+        <td><%= foodtruck.longitude %></td>
         <td><%= foodtruck.menu %></td>
         <td><%= foodtruck.foodtype %></td>
         <td><%= foodtruck.logo %></td>
-        <!-- <td><%= foodtruck.rating %></td> -->
+        <td><%= foodtruck.rating %></td>
         <td><%= link_to 'Show', foodtruck %></td>
         <td><%= link_to 'Edit', edit_foodtruck_path(foodtruck) %></td>
         <td><%= link_to 'Destroy', foodtruck, method: :delete, data: { confirm: 'Are you sure?' } %></td>

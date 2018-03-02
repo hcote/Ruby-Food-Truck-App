@@ -17,22 +17,26 @@ ActiveRecord::Schema.define(version: 20180301213307) do
 
   create_table "foodtrucks", force: :cascade do |t|
     t.string "name"
-    t.integer "lat"
-    t.integer "lon"
+    t.string "latitude"
+    t.string "longitude"
     t.string "menu"
     t.string "foodtype"
     t.string "logo"
     t.integer "rating"
+    t.bigint "user_id"
+    t.string "address"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_foodtrucks_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "email"
     t.string "password_digest"
+    t.boolean "owner"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "owner"
   end
 
 end

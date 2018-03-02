@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :foodtrucks
+  resources :foodtrucks  do
+    collection do
+      get :map
+  end
+  end
   root "users#index"
   resources :users, except: [:new]
 

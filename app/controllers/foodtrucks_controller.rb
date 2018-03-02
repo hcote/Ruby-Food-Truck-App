@@ -25,7 +25,7 @@ class FoodtrucksController < ApplicationController
   # POST /foodtrucks.json
   def create
     @foodtruck = Foodtruck.new(foodtruck_params)
-
+    @foodtruck.user_id = current_user.id
     respond_to do |format|
       if @foodtruck.save
         format.html { redirect_to @foodtruck, notice: 'Foodtruck was successfully created.' }

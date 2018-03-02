@@ -1,7 +1,17 @@
 <h1>User Profile</h1>
 <hr>
 <p><strong>Email:</strong> <%= @user.email %></p>
-<p class="small text-muted">Joined <%= time_ago_in_words(@user.created_at) %> ago</p>
+<p><strong>Owner?:</strong> <%= @user.owner %></p>
+<!-- <p class="small text-muted">Joined <%= time_ago_in_words(@user.created_at) %> ago</p> -->
+
+<% if @user.owner != false %>
+  <hr>
+  <p>
+<%= link_to "See My trucks", foodtruck_path(@user), class: "btn btn-default" %>
+<%= link_to "Create New Truck", new_foodtruck_path(@user), class: "btn btn-default" %>
+</p>
+<% else %>
+<% end %>
 
 <!-- only let user who owns this account see edit/delete buttons -->
 <% if current_user && current_user == @user %>

@@ -13,10 +13,10 @@ Rails.application.routes.draw do
   get "/logout", to: "sessions#destroy"
   resources :sessions, only: [:create]
 
-  get '/pizza', to: 'maps#pizza'
-  get '/asian', to: 'maps#asian'
-  get '/veggie', to: 'maps#veggie'
-  get '/mexican', to: 'maps#mexican'
+  get '/pizza', to: 'foodtrucks#map'
+  get '/asian', to: 'foodtrucks#map'
+  get '/veggie', to: 'foodtrucks#map'
+  get '/mexican', to: 'foodtrucks#map'
 
   get '/newtruck', to: 'foodtrucks#new'
 

@@ -15,12 +15,12 @@
 //= require turbolinks
 //= require_tree .
 
-$("#pizza").click(function() {
-  console.log("we clicked a button");
-   var fired_button = $("#pizza")[0].id;
-   console.log(fired_button);
-   alert(fired_button);
-});
+// $("button").click(function() {
+//   console.log("we clicked a button");
+//    var fired_button = $(this).val();
+//    console.log(fired_button);
+//    alert(fired_button);
+// });
 
 
 

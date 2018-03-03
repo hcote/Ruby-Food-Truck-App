@@ -1,4 +1,3 @@
-
 @initMap = ->
   center =
     lat: 37.7749
@@ -8,12 +7,14 @@
     zoom: 10
     center: center
 
+
+
   infowindow = new (google.maps.InfoWindow)
 
   $.getJSON '/foodtrucks.json', (jsonData) ->
     $.each jsonData, (key, data) ->
 
-      if data.foodtype is 'pizza'
+      if data.foodtype is 'mexican'
 
         latLng = new (google.maps.LatLng)(data.lat, data.lng)
         marker = new (google.maps.Marker)
@@ -25,4 +26,3 @@
             content: data.content
             maxWidth: 300
           infowindow.open map, marker
-

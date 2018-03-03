@@ -36,4 +36,3 @@ foodtruck = Foodtruck.new
  foodtruck.foodtype = "pizza"
 
  foodtruck.save
-

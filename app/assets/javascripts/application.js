@@ -15,8 +15,18 @@
 //= require turbolinks
 //= require_tree .
 
+$("#pizza").click(function() {
+  console.log("we clicked a button");
+   var fired_button = $("#pizza")[0].id;
+   console.log(fired_button);
+   alert(fired_button);
+});
+
+
 
 $(document).on('turbolinks:load', function(){
+
+
   if ($('#map').length > 0){
     var google_map = $('meta[name=google_maps]').attr("content");
     $.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyAG4Q_FIDFKsNYZNLlBe7splO4Yr9-cNPs&callback=initMap');

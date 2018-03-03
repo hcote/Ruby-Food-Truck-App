@@ -17,6 +17,9 @@
   infowindow = new (google.maps.InfoWindow)
 
   createMap = (fired_button) ->
+    markers = []
+    for x in [0..markers.length]
+      console.log ("we are in the markers loop")
 
     $.getJSON '/foodtrucks.json', (jsonData) ->
       $.each jsonData, (key, data) ->
@@ -28,6 +31,7 @@
             position: latLng
             map: map
             title: data.title
+          marker.setMap(map);
           markers.push(marker)
           google.maps.event.addListener marker, 'click', ->
             infowindow.setOptions

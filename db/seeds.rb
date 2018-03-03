@@ -10,13 +10,29 @@ foodtruck = Foodtruck.new
  foodtruck.name = "Katie"
  foodtruck.latitude = "37.78"
  foodtruck.longitude = "-122.44"
-
+ foodtruck.foodtype = "veggie"
    foodtruck.save
 
- foodtruck2 = Foodtruck.new
- foodtruck2.name = "Kingsley"
- foodtruck2.latitude = "36.804363"
- foodtruck2.longitude = "-122.271111"
+ foodtruck = Foodtruck.new
+ foodtruck.name = "Kingsley"
+ foodtruck.latitude = "36.804363"
+ foodtruck.longitude = "-122.271111"
+ foodtruck.foodtype = "veggie"
 
+ foodtruck.save
 
- foodtruck2.save
+ foodtruck = Foodtruck.new
+ foodtruck.name = "hunter"
+ foodtruck.latitude = "37.004363"
+ foodtruck.longitude = "-122.271111"
+ foodtruck.foodtype = "pizza"
+
+ foodtruck.save
+
+ foodtruck = Foodtruck.new
+ foodtruck.name = "Berto"
+ foodtruck.latitude = "37.004363"
+ foodtruck.longitude = "-122.271111"
+ foodtruck.foodtype = "pizza"
+
+ foodtruck.save

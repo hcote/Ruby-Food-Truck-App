@@ -6,6 +6,8 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Foodtruck ID</th>
+      <th>Creater ID</th>
       <th>Latitude</th>
       <th>Longitude</th>
       <th>Menu</th>
@@ -20,6 +22,8 @@
     <% @foodtrucks.each do |foodtruck| %>
       <tr>
         <td><%= foodtruck.name %></td>
+        <td><%= foodtruck.id %></td>
+        <td><%= foodtruck.user_id %></td>
         <td><%= foodtruck.latitude %></td>
         <td><%= foodtruck.longitude %></td>
         <td><%= foodtruck.menu %></td>
@@ -35,5 +39,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Foodtruck', new_foodtruck_path %>

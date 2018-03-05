@@ -82,3 +82,8 @@ div {
 label {
   display: block;
 }
+
+div.lat label:after {
+    content: " *";
+    color: red;
+}

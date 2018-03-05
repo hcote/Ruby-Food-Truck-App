@@ -11,6 +11,7 @@ foodtruck = Foodtruck.new
  foodtruck.latitude = "37.78"
  foodtruck.longitude = "-122.44"
  foodtruck.foodtype = "veggie"
+ foodtruck.address = "122 bush st"
    foodtruck.save
 
  foodtruck = Foodtruck.new
@@ -18,6 +19,7 @@ foodtruck = Foodtruck.new
  foodtruck.latitude = "36.804363"
  foodtruck.longitude = "-122.271111"
  foodtruck.foodtype = "veggie"
+  foodtruck.address = "123 bush st"
 
  foodtruck.save
 
@@ -26,6 +28,7 @@ foodtruck = Foodtruck.new
  foodtruck.latitude = "37.004363"
  foodtruck.longitude = "-122.271111"
  foodtruck.foodtype = "pizza"
+  foodtruck.address = "12 Kearny st"
 
  foodtruck.save
 
@@ -34,5 +37,25 @@ foodtruck = Foodtruck.new
  foodtruck.latitude = "37.004363"
  foodtruck.longitude = "-122.271111"
  foodtruck.foodtype = "pizza"
+   foodtruck.address = "12 Kearny st"
 
  foodtruck.save
+
+  foodtruck = Foodtruck.new
+ foodtruck.name = "Asian"
+ foodtruck.latitude = "37.904363"
+ foodtruck.longitude = "-122.271111"
+ foodtruck.foodtype = "asian"
+   foodtruck.address = "12 Kearny st"
+
+ foodtruck.save
+
+   foodtruck = Foodtruck.new
+ foodtruck.name = "Mex"
+ foodtruck.latitude = "37.904363"
+ foodtruck.longitude = "-122.371111"
+ foodtruck.foodtype = "mexican"
+ foodtruck.address = "12 Kearny st"
+
+ foodtruck.save
+

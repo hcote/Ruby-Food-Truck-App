@@ -31,8 +31,10 @@ class FoodtrucksController < ApplicationController
         format.html { redirect_to @foodtruck, notice: 'Foodtruck was successfully created.' }
         format.json { render :show, status: :created, location: @foodtruck }
       else
-        format.html { render :new }
+        format.html {  }
         format.json { render json: @foodtruck.errors, status: :unprocessable_entity }
+        flash[:error] = @foodtruck.errors.full_messages.join(", ")
+        redirect_to new_foodtruck_path
       end
     end
   end

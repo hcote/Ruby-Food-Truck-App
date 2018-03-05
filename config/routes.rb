@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       get :map
   end
   end
-  root "users#index"
+  root "foodtrucks#map"
   resources :users, except: [:new]
 
   get "/signup", to: "users#new"

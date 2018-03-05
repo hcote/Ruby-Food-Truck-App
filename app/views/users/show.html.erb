@@ -7,7 +7,7 @@
 <% if @user.owner != false %>
   <hr>
   <p>
-<%= link_to "See My trucks", foodtruck_path(@user), class: "btn btn-default" %>
+<%= link_to "See My trucks", foodtrucks_path(@user), class: "btn btn-default" %>
 <%= link_to "Create New Truck", new_foodtruck_path(@user), class: "btn btn-default" %>
 </p>
 <% else %>

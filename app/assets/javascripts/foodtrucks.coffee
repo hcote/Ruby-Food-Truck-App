@@ -36,5 +36,5 @@
           google.maps.event.addListener marker, 'click', ->
             infowindow.setOptions
               content: data.content
-              maxWidth: 300
+              maxWidth: 400
             infowindow.open map, marker

@@ -17,7 +17,7 @@
 
 body{
   margin: 0 auto;
-    background-image: url('../assets/churros.jpg');
+    /*background-image: url('../assets/churros.jpg');*/
    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -87,22 +87,21 @@ footer {
 background: rgba(192, 192, 192, .7);
   width: 100%;
   margin: 0em 0em;
-  padding: 3.5em 0em;
+  padding: 2em 0em;
 }
-/*.col-md-6 col-md-offset-3*/
 
 tbody td{
-  background-color: green;
+/*  background-color: green;
   padding: .5em 2em;
   margin: 1em 1em;
-  border-radius: 1em;
+  border-radius: 1em;*/
 }
 
 .container site-content{
   width: 100%
 }
 
-.infoWin h1{
+.infoWin h2{
   color: #00303f;
   text-transform: uppercase;
   font-family: 'Shrikhand', cursive;
@@ -110,8 +109,21 @@ tbody td{
   text-align: center;
 }
 
+.infoWin img{
+  border: .1em solid #7a9d96;
+  width: 180px;
+  height: 100px;
+  margin-bottom: 1em;
+}
+
+.infoWin p {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
 #map{
   width: 100%;
+  margin-top: -1em;
 }
 
 
@@ -136,8 +148,44 @@ input.chk-btn:checked + label {
   background: #8cc472;
 
 }
-
 #map-canvas {
     width: 500px;
     height: 500px;
 }
+
+h2 {
+    font-family: 'Shrikhand', cursive;
+}
+
+#buttons button {
+  background-color: #cae4db;
+  color: #00303F;
+  font-weight: 800;
+  width: 10em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  border-radius: .5em;
+}
+#buttons button:hover {
+  background-color: #dcae1d;
+  color: #00303F;
+  font-weight: 800;
+}
+
+#buttons button:focus {
+  outline:0;
+}
+
+#submitB {
+  background-color:  #00303F;
+  color: white;
+  font-weight: 800;
+  /*width: 10em;*/
+/*  padding-bottom: .5em;
+  padding-top: .5em;*/
+  border-radius: .5em;
+  margin-bottom: -1em;
+  margin-top:1em;
+}
+
+

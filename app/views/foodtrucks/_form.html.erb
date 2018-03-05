@@ -26,15 +26,17 @@
     <%= form.text_field :longitude, id: :foodtruck_longitude %>
   </div>
 
+    <div class="field">
+    <%= form.label :foodtype %>
+    <%= form.text_field :foodtype, id: :foodtruck_foodtype %>
+  </div>
+
   <div class="field">
     <%= form.label :menu %>
     <%= form.text_field :menu, id: :foodtruck_menu %>
   </div>
 
-  <div class="field">
-    <%= form.label :foodtype %>
-    <%= form.text_field :foodtype, id: :foodtruck_foodtype %>
-  </div>
+
 
   <div class="field">
     <%= form.label :logo %>

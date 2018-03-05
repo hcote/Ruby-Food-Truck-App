@@ -91,10 +91,10 @@ background: rgba(192, 192, 192, .7);
 }
 
 tbody td{
-  background-color: green;
+/*  background-color: green;
   padding: .5em 2em;
   margin: 1em 1em;
-  border-radius: 1em;
+  border-radius: 1em;*/
 }
 
 .container site-content{
@@ -113,6 +113,12 @@ tbody td{
   border: .1em solid #7a9d96;
   width: 180px;
   height: 100px;
+  margin-bottom: 1em;
+}
+
+.infoWin p {
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
 #map{
@@ -181,3 +187,5 @@ h2 {
   margin-bottom: -1em;
   margin-top:1em;
 }
+
+

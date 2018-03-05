@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Foodtrucks</h1>
-
+<h2>Your Foodtrucks</h2>
+<div class="truckInfo">
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Truck ID</th>
-      <th>User ID</th>
-      <th>Lat</th>
-      <th>Lng</th>
-      <th>Menu</th>
-      <th>Foodtype</th>
+      <th><p>Name</p></th>
+      <th><p>Truck ID</p></th>
+      <th><p>User ID</p></th>
+      <th><p>Lat</p></th>
+      <th><p>Lng</p></th>
+      <th><p>Menu</p></th>
+      <th><p>Foodtype</p></th>
       <!-- <th>Logo</th> -->
       <!-- <th>Rating</th> -->
       <th colspan="3"></th>
@@ -40,4 +40,6 @@
 
 <br>
 
-<%= link_to 'New Foodtruck', new_foodtruck_path %>
+<span id="newTruck"><%= link_to 'New Foodtruck', new_foodtruck_path %></span>
+
+</div>

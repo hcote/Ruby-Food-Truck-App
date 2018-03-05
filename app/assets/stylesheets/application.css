@@ -83,19 +83,12 @@ footer {
   height: 10em;
 }
 
-.row {
+/*.row {
 background: rgba(192, 192, 192, .7);
   width: 100%;
   margin: 0em 0em;
   padding: 2em 0em;
-}
-
-tbody td{
-/*  background-color: green;
-  padding: .5em 2em;
-  margin: 1em 1em;
-  border-radius: 1em;*/
-}
+}*/
 
 .container site-content{
   width: 100%
@@ -130,14 +123,15 @@ tbody td{
 input.chk-btn {
   display: none;
 }
+
 input.chk-btn + label {
   border: 1px solid grey;
   background: ghoswhite;
   padding: 5px 8px;
   cursor: pointer;
   border-radius: 5px;
-
 }
+
 input.chk-btn:not(:checked) + label:hover {
   box-shadow: 0px 1px 3px;
 
@@ -174,18 +168,83 @@ h2 {
 
 #buttons button:focus {
   outline:0;
+  background-color: #dcae1d;
 }
 
 #submitB {
   background-color:  #00303F;
   color: white;
   font-weight: 800;
-  /*width: 10em;*/
-/*  padding-bottom: .5em;
-  padding-top: .5em;*/
   border-radius: .5em;
   margin-bottom: -1em;
   margin-top:1em;
 }
 
+.truckInfo td{
+  border: .2em solid #7a9d96;
+  text-transform: uppercase;
+}
+.truckInfo th{
+  border: .2em solid #7a9d96;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #00303F;
+  color: white;
+}
+
+.truckInfo p {
+  margin: .5em .5em;
+}
+#newTruck {
+  background-color:  #00303F;
+  color: white;
+  font-weight: 800;
+  border-radius: .5em;
+  margin-bottom: -1em;
+  margin-top:1em;
+  padding: .4em;
+}
+#newTruck a:visited{
+  color: white;
+}
+#newTruck a{
+  color: white;
+}
+#newTruck a:hover {
+  outline:0;
+  text-decoration:none;
+  background-color: #7a9d96;
+  }
+#newTruck:hover{
+  background-color: #7a9d96;
+}
+.btn{
+  background-color:  #00303F;
+  color: white;
+  font-weight: 800;
+}
+
+.editProfile a:visited{
+  color: white;
+}
+
+.btn a{
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #7a9d96;
+}
+
+.actions input{
+  background-color:  #00303F;
+  color: white;
+  font-weight: 800;
+}
+
+.actions input:hover {
+  color: white;
+  background-color: #7a9d96;
+}
 

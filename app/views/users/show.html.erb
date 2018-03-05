@@ -1,23 +1,26 @@
-<h1>User Profile</h1>
+<h2>User Profile</h2>
 <hr>
 <p><strong>Email:</strong> <%= @user.email %></p>
-<p><strong>Owner?:</strong> <%= @user.owner %></p>
+<p><strong>Food Truck Owner?:</strong> <%= @user.owner %></p>
 <!-- <p class="small text-muted">Joined <%= time_ago_in_words(@user.created_at) %> ago</p> -->
 
 <% if @user.owner != false %>
   <hr>
   <p>
+<div class ="editProfile">
 <%= link_to "See My trucks", foodtrucks_path(@user), class: "btn btn-default" %>
 <%= link_to "Create New Truck", new_foodtruck_path(@user), class: "btn btn-default" %>
 </p>
 <% else %>
 <% end %>
-
+</div>
 <!-- only let user who owns this account see edit/delete buttons -->
 <% if current_user && current_user == @user %>
   <hr>
   <p>
+    <div class ="editProfile">
     <%= link_to "Edit Profile", edit_user_path(@user), class: "btn btn-default" %>
     <%= link_to "Delete Profile", user_path(@user), method: :delete, class: "btn btn-default" %>
+    </div>
   </p>
 <% end %>

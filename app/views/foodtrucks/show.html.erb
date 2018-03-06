@@ -30,6 +30,15 @@
   <%= @foodtruck.logo %>
 </p>
 
+<br>
+
+<div class ="editButton">
+<%= link_to 'Edit', edit_foodtruck_path(@foodtruck) %>
+<%= link_to 'Back', foodtrucks_path %>
+<%= link_to 'Map', root_path %>
+</div>
+
+
 <p>
   <strong>Address:</strong>
   <%= @foodtruck.address %>

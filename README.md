@@ -38,10 +38,10 @@ Back End
 https://obscure-woodland-57780.herokuapp.com/
 
 # Contributers
-Lamberto Asghedom- https://github.com/bigbertolucci
-Katie So - https://github.com/ktso11
-Kingsley Nyaosi- https://github.com/xingzo
-Hunter Cote - https://github.com/hcote
+* Lamberto Asghedom- https://github.com/bigbertolucci
+* Katie So - https://github.com/ktso11
+* Kingsley Nyaosi- https://github.com/xingzo
+* Hunter Cote - https://github.com/hcote
 
 # Coding Process
 Lamberto and Hunter pair programmed the back end, while Katie and Kingsley took care of the front end, all of the styling, including the Google Maps API. 

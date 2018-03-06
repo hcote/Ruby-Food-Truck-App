@@ -29,11 +29,13 @@
   <strong>Logo:</strong>
   <%= @foodtruck.logo %>
 </p>
-
-<p>
+<br>
+<!-- <p>
   <strong>Rating:</strong>
   <%= @foodtruck.rating %>
-</p>
-
-<%= link_to 'Edit', edit_foodtruck_path(@foodtruck) %> |
+</p> -->
+<div class ="editButton">
+<%= link_to 'Edit', edit_foodtruck_path(@foodtruck) %>
 <%= link_to 'Back', foodtrucks_path %>
+<%= link_to 'Map', root_path %>
+</div>

@@ -36,6 +36,7 @@ Back End
 
 # Link To Heroku
 https://obscure-woodland-57780.herokuapp.com/
+(Issue with Heroku - it does not register new food trucks created on the map)
 
 # Contributers
 * Lamberto Asghedom- https://github.com/bigbertolucci

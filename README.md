@@ -1,7 +1,7 @@
 # README
 
 # What Does Our App Do?
-finDining is the go-to app for anyone looking to see where the local food trucks are. Go to our site, and you’re immediately presented with a map showing all open food trucks in any city or area you choose.
+FinDining is the go-to app for anyone looking to see where the local food trucks are. Go to our site, and you’re immediately presented with a map showing all open food trucks in any city or area you choose.
 
 You choose between one of the four options for food types: Veggie, Mexican, Pizza, and Mexican. You can choose multiple options at the same time and all matching food trucks will show in the map.
 
